@@ -1,0 +1,13 @@
+{
+  "name": "smm-organic-manager",
+  "version": "1.0.0",
+  "description": "Smart SMM Campaign Manager with Telegram Bot Control",
+  "main": "server/index.js",
+  "scripts": {
+    "build": "npm --prefix client install && npm --prefix client run build && npm --prefix server install",
+    "start": "node server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
