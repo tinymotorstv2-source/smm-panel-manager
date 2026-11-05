@@ -7,7 +7,7 @@
     "node": "20.x"
   },
   "scripts": {
-    "build": "npm --prefix client install && npm --prefix client run build && npm --prefix server install --build-from-source=sqlite3",
+    "build": "node -e \"const fs=require('fs'); try{fs.rmSync('server/node_modules',{recursive:true,force:true})}catch(e){}\" && npm --prefix client install && npm --prefix client run build && npm --prefix server install",
     "start": "node server/index.js"
   },
   "keywords": [],
