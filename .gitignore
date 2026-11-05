@@ -5,5 +5,4 @@ server/node_modules
 server/.env
 database.sqlite
 server/database.sqlite
-dist
 .DS_Store
